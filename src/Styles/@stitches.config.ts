@@ -12,6 +12,8 @@ export const {
         colors:{
             "primary":"#A4F5A9",
             "primary200":"rgba(164,245,169,0.2)",
+            "primary800":"rgba(164,245,169,0.8)",
+            "primary600":"rgba(164,245,169,0.6)", 
             "onPrimary":"#002107",
             "bg":"#1E1B1C",
             "onBg":"#FEFCF9",
@@ -41,6 +43,9 @@ export const {
         },
 
         fontSizes:{
+            display1:"74px",
+            display2:"57px",
+            display3:"45px",
             "headline1":"36px",
             "headline2":"32px",
             "headline3":"28px",
@@ -55,6 +60,9 @@ export const {
         },
 
         lineHeights:{
+            display1:"76px",
+            display2:"64px",
+            display3:"52px",
             "headline1":"44px",
             "headline2":"40px",
             "headline3":"36px",
@@ -82,7 +90,12 @@ export const {
             3:"24px",
             4:"32px", 
             5:"40px", 
-            6:"50px"
+            6:"50px",
+            7:"62px",
+            8:"74px",
+            9:"86px",
+            10:"98px",
+            11:"112px",
         },
         radii:{
             "50":"50%"
@@ -98,11 +111,38 @@ export const {
     } , 
     media:{
         "bp1":"(max-width:1000px)",
-        "bp2":"(max-width:650px)",
-        "bp3":"(max-width:500px)",
+        "bp2":"(max-width:800px)",
+        
+        "bp3":"(max-width:720px)",
+        "bp4":"(max-width:600px)", 
+        "bp5":"(max-width:450px)", 
 
     },
     utils:{
+        "display1":(weight:string)=>({
+            fontFamily:"$barlow" ,
+            fontWeight:weight,
+            fontSize:"$display1",
+            lineHeight:"$display1",
+            fontStyle:"normal"
+         }),
+
+         "display2":(weight:string)=>({
+            fontFamily:"$barlow" ,
+            fontWeight:weight,
+            fontSize:"$display2",
+            lineHeight:"$display2",
+            fontStyle:"normal"
+         }),
+
+         "display3":(weight:string)=>({
+            fontFamily:"$barlow" ,
+            fontWeight:weight,
+            fontSize:"$display3",
+            lineHeight:"$display3",
+            fontStyle:"normal"
+         }),
+
         "headline1":(weight:string)=>({
             fontFamily:"$barlow" ,
             fontWeight:weight,
@@ -279,10 +319,13 @@ export const {
             backgroundPosition:"center",
             backgroundOrigin:"content-box",
             backgroundSize:"cover",
-            opacity:"40%",
+            opacity:"25%",
             position:"absolute",
             left:0,
             top:0
+        }),
+        opac:(value:string)=>({
+            opacity:value
         })
 
     }
