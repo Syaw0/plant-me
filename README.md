@@ -1,11 +1,10 @@
-## Plant Me
+## Veg Me
 
 ### What is the special thing of this project?
-This project or mini-project is just a simple landing page to directly provide general information about the features of the site
+This project or mini-project is just a simple landing page which has a small animation and introduces some salads
 
-I will probably work on the idea of this site in the near future and I have ideas for it
 
 
 ### Demo
-  [![PlantMe](https://user-images.githubusercontent.com/78824988/177599683-5cddada6-4bf7-48f0-9e9f-cab98296e802.png)](https://final-plant-me.vercel.app/)
+  [![PlantMe](https://user-images.githubusercontent.com/90524474/177870119-f1d49a4c-fc15-4341-982c-1ffbebac705e.png)](https://final-veg-me.vercel.app/)
 
